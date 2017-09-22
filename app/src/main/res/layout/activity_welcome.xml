@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    tools:context="bmu.in.bmuapp.WelcomeActivity">
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo"
+        android:layout_width="230dp"
+        android:layout_height="190dp"></RelativeLayout>
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text=" Student"
+        android:background="@color/Orange"
+        android:onClick="student"
+        android:drawableLeft="@drawable/student"
+        android:id="@+id/button" />
+
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/button"
+        android:drawableLeft="@drawable/teachericon"
+        android:layout_alignLeft="@+id/button"
+        android:background="@color/Orange"
+        android:layout_alignStart="@+id/button"
+        android:onClick="staff"
+        android:text=" Faculty "
+        android:id="@+id/button2" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text=" Guest "
+        android:drawableLeft="@drawable/guest"
+        android:background="@color/Orange"
+        android:onClick="guest"
+        android:id="@+id/button3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/button2"/>
+
+</RelativeLayout>

@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faculty Info:"
+            android:textColor="#000000"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:textSize="20dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_weight="0.94"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:contentPadding="5dp"
+                card_view:cardCornerRadius="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/brij"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:letterSpacing="0.05"
+                            android:paddingLeft="10dp"
+                            android:onClick="brijsir"
+                            android:text="MR. BRIJ BIHARI DUBEY"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:background="@android:color/white"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/email_brij"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:tint="@android:color/darker_gray"
+                                card_view:srcCompat="@drawable/ic_email_black_24dp"/>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@android:color/darker_gray"/>
+
+                            <ImageView
+                                android:id="@+id/call_brij"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_call_black_24dp"
+                                android:tint="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+                       </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_v2"
+                android:layout_margin="5dp"
+                android:layout_weight="0.94"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:contentPadding="5dp"
+                card_view:cardCornerRadius="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/dr_jaskiran_arora"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:letterSpacing="0.05"
+                            android:text="DR. JASKIRAN ARORA"
+                            android:onClick="jaskiran"
+                            android:textColor="@android:color/black"
+                            android:paddingLeft="10dp"
+                            android:textSize="17sp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:background="@android:color/white"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/email_jaski"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:tint="@android:color/darker_gray"
+                                card_view:srcCompat="@drawable/ic_email_black_24dp"/>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@android:color/darker_gray"/>
+
+                            <ImageView
+                                android:id="@+id/call_jaski"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_call_black_24dp"
+                                android:tint="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_3"
+                android:layout_margin="5dp"
+                android:layout_weight="0.94"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:contentPadding="5dp"
+                card_view:cardCornerRadius="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/dr_rishi_asthana"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:letterSpacing="0.05"
+                            android:text="DR. RISHI ASTHANA"
+                            android:onClick="rishi"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@android:color/black"
+                            android:paddingLeft="10dp"
+                            android:textSize="17sp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:background="@android:color/white"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/email_rishi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:tint="@android:color/darker_gray"
+                                card_view:srcCompat="@drawable/ic_email_black_24dp"/>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@android:color/darker_gray"/>
+
+                            <ImageView
+                                android:id="@+id/call_rishi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_call_black_24dp"
+                                android:tint="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_v4"
+                android:layout_margin="5dp"
+                android:layout_weight="0.94"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:contentPadding="5dp"
+                card_view:cardCornerRadius="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/dr_sanmitra_barman"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:letterSpacing="0.05"
+                            android:layout_alignParentRight="true"
+                            android:onClick="barman"
+                            android:text="DR. SANMIRA BARMAN"
+                            android:textColor="@android:color/black"
+                            android:paddingLeft="10dp"
+                            android:textSize="17sp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:background="@android:color/white"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/email_barman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:tint="@android:color/darker_gray"
+                                card_view:srcCompat="@drawable/ic_email_black_24dp"/>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@android:color/darker_gray"/>
+
+                            <ImageView
+                                android:id="@+id/call_barman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_call_black_24dp"
+                                android:tint="@android:color/darker_gray"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_5"
+                android:layout_margin="5dp"
+                android:layout_weight="0.94"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:contentPadding="5dp"
+                card_view:cardCornerRadius="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/dr_kalluri_vinayak"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:letterSpacing="0.05"
+                            android:text="DR. KALLURI VINAYAK"
+                            android:onClick="kalluri"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@android:color/black"
+                            android:paddingLeft="10dp"
+                            android:textSize="17sp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:background="@android:color/white"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/email_kalluri"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:tint="@android:color/darker_gray"
+                                card_view:srcCompat="@drawable/ic_email_black_24dp"/>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@android:color/darker_gray"/>
+
+                            <ImageView
+                                android:id="@+id/call_kalluri"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_call_black_24dp"
+                                android:tint="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_6"
+                android:layout_margin="5dp"
+                android:layout_weight="0.94"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:contentPadding="5dp"
+                card_view:cardCornerRadius="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/dr_richa_sharma"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:letterSpacing="0.05"
+                            android:text="DR. RICHA SHARMA"
+                            android:onClick="richa"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@android:color/black"
+                            android:paddingLeft="10dp"
+                            android:textSize="17sp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:background="@android:color/white"
+                            android:gravity="center">
+                            <ImageView
+                                android:id="@+id/email_richa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:tint="@android:color/darker_gray"
+                                card_view:srcCompat="@drawable/ic_email_black_24dp"/>
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@android:color/darker_gray"/>
+                            <ImageView
+                                android:id="@+id/call_richa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_call_black_24dp"
+                                android:tint="@android:color/darker_gray"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_7"
+                android:layout_margin="5dp"
+                android:layout_weight="0.94"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:contentPadding="5dp"
+                card_view:cardCornerRadius="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shohrab"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/dr_shorabh_hossain"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:letterSpacing="0.05"
+                            android:text="DR. SHORABH HOSSAIN"
+                            android:onClick="shorbh"
+                            android:textColor="@android:color/black"
+                            android:paddingLeft="10dp"
+                            android:layout_alignParentRight="true"
+                            android:textSize="17sp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:background="@android:color/white"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/email_dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:tint="@android:color/darker_gray"
+                                card_view:srcCompat="@drawable/ic_email_black_24dp"/>
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@android:color/darker_gray"/>
+                            <ImageView
+                                android:id="@+id/call_dip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_call_black_24dp"
+                                android:tint="@android:color/darker_gray"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.v7.widget.CardView
+                android:layout_margin="5dp"
+                android:layout_weight="0.94"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:contentPadding="5dp"
+                card_view:cardCornerRadius="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/dr_ziya_uddin"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:letterSpacing="0.05"
+        android:text="DR. ZIYA UDDIN"
+        android:onClick="ziya"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
+        android:paddingLeft="10dp"
+        android:textSize="17sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@android:color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/email_ziya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:tint="@android:color/darker_gray"
+            card_view:srcCompat="@drawable/ic_email_black_24dp"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:id="@+id/call_ziya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call_black_24dp"
+            android:tint="@android:color/darker_gray"/>
+    </LinearLayout>
+</LinearLayout>
+                 </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_v1"
+                android:layout_margin="5dp"
+                android:layout_weight="0.94"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:contentPadding="5dp"
+                card_view:cardCornerRadius="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/maheshwardwivedy"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="right"
+                            android:letterSpacing="0.05"
+                            android:paddingLeft="10dp"
+                            android:text="DR. MAHESHWAR DWIVEDI"
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:background="@android:color/white"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/email_maheshwar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:tint="@android:color/darker_gray"
+                                card_view:srcCompat="@drawable/ic_email_black_24dp"/>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@android:color/darker_gray"/>
+
+                            <ImageView
+                                android:id="@+id/call_maheshwar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_call_black_24dp"
+                                android:tint="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_v8"
+                android:layout_margin="5dp"
+                android:layout_weight="0.94"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:contentPadding="5dp"
+                card_view:cardCornerRadius="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="left"
+                        android:src="@drawable/dr_swati_jha"
+                        app:civ_border_color="@android:color/white"
+                        app:civ_border_width="2dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:letterSpacing="0.05"
+                            android:layout_alignParentRight="true"
+                            android:text="DR. SWATI JHA"
+                            android:onClick="swati"
+                            android:textColor="@android:color/black"
+                            android:paddingLeft="10dp"
+                            android:textSize="17sp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:background="@android:color/white"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/email_swati"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:tint="@android:color/darker_gray"
+                                card_view:srcCompat="@drawable/ic_email_black_24dp"/>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@android:color/darker_gray"/>
+
+                            <ImageView
+                                android:id="@+id/call_swati"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_call_black_24dp"
+                                android:tint="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
